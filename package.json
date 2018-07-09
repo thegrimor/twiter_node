@@ -1,0 +1,26 @@
+{
+  "name": "twiter_node",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.51",
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "twit": "^2.2.11"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/server.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
