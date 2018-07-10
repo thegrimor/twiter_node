@@ -24,7 +24,7 @@ class App extends Component {
                 if (response.data.obj.error) {
                     console.log('get tweets');
                     axios.get('http://localhost:3000/getTweets?twiterUser='+this.state)
-                        .then((responseGetTwets) => {0
+                        .then((responseGetTwets) => {
                                 this.setState({obj: responseGetTwets.data.obj, message: responseGetTwets.data.message});
                         })
                 }
